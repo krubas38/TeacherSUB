@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* อัตราส่วน 16:9 (เปลี่ยนเป็น 100% ถ้าต้องการแนวตั้ง) */
+  }
+
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <iframe 
+    class="responsive-iframe" 
+    src="https://script.google.com/macros/s/AKfycbww2o9O6PityTt9QR06VRZuFhu1Mp92TRVEGxT8VIHI/exec" 
+    allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+</body>
+</html>
